@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(beginner_tutorials)
+project(optoforce_ros)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -138,10 +138,10 @@ src/listener.cpp)
 ## same as for the library above
 # add_dependencies(beginner_tutorials_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(talker
-beginner_tutorials_generate_messages_cpp)
+optoforce_ros_generate_messages_cpp)
 
 add_dependencies(listener
-beginner_tutorials_generate_messages_cpp)
+optoforce_ros_tutorials_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(talker
